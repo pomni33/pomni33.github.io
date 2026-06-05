@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人主页</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    max-width:500px;
+    width:100%;
+    text-align:center;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.avatar:hover{
+    transform:translateY(-5px);
+}
+
+h1{
+    margin-top:25px;
+    font-size:32px;
+    font-weight:700;
+}
+
+.tag{
+    margin-top:10px;
+    color:#64748b;
+    font-size:15px;
+}
+
+.about{
+    margin-top:25px;
+    line-height:1.8;
+    color:#475569;
+    font-size:15px;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:14px;
+    font-weight:600;
+    transition:all .35s ease;
+    backdrop-filter:blur(10px);
+}
+
+.telegram{
+    background:#0088cc;
+    color:white;
+}
+
+.telegram:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,136,204,.25);
+}
+
+.x{
+    background:#111827;
+    color:white;
+}
+
+.x:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(17,24,39,.25);
+}
+
+.footer{
+    margin-top:40px;
+    color:#94a3b8;
+    font-size:13px;
+}
+
+@media(max-width:480px){
+    h1{
+        font-size:28px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img class="avatar" src="https://picsum.photos/300" alt="头像">
+
+    <h1>你的名字</h1>
+
+    <p class="tag">学生 · 开发爱好者 · 数码玩家</p>
+
+    <div class="about">
+        <p>
+            你好，欢迎来到我的个人主页。
+            我喜欢编程、科技和互联网产品，
+            平时会分享一些学习记录、项目作品以及日常想法。
+        </p>
+    </div>
+
+    <div class="buttons">
+        <a class="btn telegram" href="t.me/kaoyu06" target="_blank">
+            Telegram
+        </a>
+
+        <a class="btn x" href="x.com/kaoyuuuuuu" target="_blank">
+            X (Twitter)
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 Personal Homepage
+    </div>
+
+</div>
+
+</body>
+</html>
